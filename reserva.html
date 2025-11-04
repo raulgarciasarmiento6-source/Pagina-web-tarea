@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:  rgb(255, 223, 193);">
+    <h1>Haga su reserva:</h1>
+<form action="procesa.php" method="get">
+    <fieldset>
+        <legend>Datos Personales</legend>
+    <p>
+        <label for="nom">Nombre:</label>
+        <input type="text" maxlength="17" 
+        name="Nombre" 
+        id="nom">  
+        
+        <label for="ape">Apellidos:</label>
+        <input type="text" 
+        name="Apellidos"
+        id="ape">
+
+        <label for="ape">DNI con letra</label>
+        <input type="text" maxlength="10"
+        name="DNI con letra"
+        id="DNI">
+
+
+    </p>
+</fieldset>
+<fieldset> 
+
+    <legend>Datos de su Estancia</legend>
+
+    <legend>Habitaciones</legend>
+
+    <p>
+
+<label for="Individual">Individual</label>
+<input type="radio" value="Individual"
+checked id="Individual" name="1">
+
+    </p>
+
+
+    <p>
+
+<label for="Doble">Doble</label>
+<input type="radio" value="Doble"
+checked id="Doble" name="1">
+
+    </p>
+
+
+    <p>
+
+<label for="Triple">Triple</label>
+<input type="radio" value="Triple"
+checked id="Triple" name="1">
+
+    </p>
+
+    <p>
+        
+        <label for="hab">Seleccione el número de personas</label>
+            <select name="hab" id="Habitaciones">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+    </p>
+    <p>
+
+<label for="masc">Llevo mascotas</label>
+<input type="checkbox" name="Llevo mascotas" id="masc">
+    </p>
+    <p>
+        <label for="flleg">Fecha de llegada</label>
+        <input type="date" name="Fecha de llegada" id="flleg">
+    </p>
+
+    <p>
+        <label for="hlleg">Hora de Llegada</label>
+        <input type="time" name="Hora de Llegada">
+    </p>
+</fieldset>
+
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar" >
+</p>
+<a href="Index.html">Volver a la página principal</a>
+
+
+</body>
+</html>
